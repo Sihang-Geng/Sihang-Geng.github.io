@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>耿思航 | 推免申请个人主页</title>
+  <meta name="description" content="耿思航的推免申请个人主页，精简展示学业、科研、项目与证明材料。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">耿思航</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#research">科研</a>
+      <a href="#projects">项目</a>
+      <a href="#proofs">材料</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content reveal">
+          <p class="single-label">推免申请个人主页</p>
+          <h1>耿思航</h1>
+          <p class="hero-copy">
+            大连海事大学（211、双一流）数据科学与大数据技术专业 2023 级本科生，计划申请 2027 级推免硕士，专业排名 1/35。当前科研训练主要集中在计算机视觉、多模态建模，已以第一作者身份完成一篇水下视觉感知任务相关论文，并在中国科学院沈阳自动化研究所接受了科研训练。
+          </p>
+          <div class="hero-highlights" aria-label="核心竞争力">
+            <span>GPA 4.10/5.00</span>
+            <span>专业排名 1/35</span>
+            <span>国家奖学金</span>
+            <span>第一作者论文</span>
+            <span>中科院科研实习</span>
+            <span>AI 算法国一队长</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#research">科研与论文</a>
+            <a class="button secondary" href="assets/docs/resume-geng-sihang.pdf" target="_blank" rel="noreferrer">查看简历</a>
+          </div>
+        </div>
+        <figure class="hero-photo reveal">
+          <img src="assets/images/competition-photo.jpg" alt="耿思航参赛现场照片">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2 class="section-title reveal">核心亮点</h2>
+      <div class="stats-grid">
+        <article class="stat-card reveal">
+          <strong>4.10 / 5.00</strong>
+          <span>GPA</span>
+        </article>
+        <article class="stat-card reveal">
+          <strong>1 / 35</strong>
+          <span>专业排名</span>
+        </article>
+        <article class="stat-card reveal">
+          <strong>国家奖学金</strong>
+          <span>2024-2025 学年</span>
+        </article>
+        <article class="stat-card reveal">
+          <strong>国家一等奖</strong>
+          <span>AI 算法竞赛队长</span>
+        </article>
+        <article class="stat-card reveal">
+          <strong>一作论文</strong>
+          <span>水下视觉感知方向</span>
+        </article>
+        <article class="stat-card reveal">
+          <strong>中科院科研训练</strong>
+          <span>遥感小目标检测</span>
+        </article>
+      </div>
+      <div class="about-content reveal">
+        <p>
+          我已有较系统的科研训练经历，也具备较扎实的课程基础。课程方面，高等数学上下均为 98，Python 程序设计 94，机器学习 92；科研训练方面，围绕水下视觉感知、遥感小目标检测和多模态推荐建模持续开展实验。熟悉 PyTorch 与 GPU 集群环境，掌握 Transformer、LoRA、VLM 架构与微调流程，具备视觉与 NLP 常用模型训练、实验复现、结果对比和代码管理经验。
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <h2 class="section-title reveal">科研与论文</h2>
+      <article class="research-card reveal">
+        <div class="research-text">
+          <p class="badge">第一作者完成论文 · Major Revision · JCR Q1 期刊方向</p>
+          <h3>Contour-Detail Priors for Noise-Coupled Underwater Object Detection</h3>
+          <p>
+            针对水下光传播退化造成的目标结构信息弱化问题，提出轮廓-细节先验引导方法，并通过残差路径重构、AHFI-Res 与 CDP 架构增强水下目标检测中的结构表达能力。
+          </p>
+          <div class="tag-list">
+            <span>Underwater Vision</span>
+            <span>CDP / AHFI</span>
+            <span>PyTorch</span>
+            <span>Lightweight Detection</span>
+          </div>
+          <div class="button-row">
+            <a class="button primary" href="assets/docs/paper-framework-proof.pdf" target="_blank" rel="noreferrer">查看论文主框架图</a>
+            <a class="button secondary" href="https://github.com/Sihang-Geng/CDP-train" target="_blank" rel="noreferrer">查看训练代码</a>
+          </div>
+        </div>
+        <a class="paper-preview" href="assets/docs/paper-framework-proof.pdf" target="_blank" rel="noreferrer" aria-label="查看论文主框架图证明">
+          <img src="assets/images/paper-framework.png" alt="论文主框架图缩略预览">
+        </a>
+      </article>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section-title reveal">项目介绍</h2>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <h3>CDP-Train</h3>
+          <p>水下目标检测训练框架，用于一作论文中 CDP/AHFI 结构的训练、验证与 COCO 风格评估。</p>
+          <div class="tag-list">
+            <span>YOLO</span>
+            <span>COCO AP</span>
+            <span>Underwater Object Detection</span>
+          </div>
+          <a class="project-link" href="https://github.com/Sihang-Geng/CDP-train" target="_blank" rel="noreferrer">查看代码仓库</a>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>AIC_Solution</h3>
+          <p>图书借阅推荐赛题，结合 LLM API、BERT、GAT 与集成排序，初赛排名 1/446，获国家一等奖。</p>
+          <div class="tag-list">
+            <span>LLM API</span>
+            <span>BERT</span>
+            <span>GAT</span>
+            <span>Multimodal Ranking</span>
+          </div>
+          <div class="button-row">
+            <a class="button primary small" href="https://github.com/Sihang-Geng/AIC_Solution" target="_blank" rel="noreferrer">查看代码仓库</a>
+            <a class="button secondary small" href="assets/docs/aic-national-award.pdf" target="_blank" rel="noreferrer">获奖证明</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>Point-Cloud-Affordance-Annotator</h3>
+          <p>3D 点云可供性标注工具，将少量点选种子经 kNN 图扩散为 affordance heatmap。</p>
+          <div class="tag-list">
+            <span>Open3D</span>
+            <span>kNN Diffusion</span>
+            <span>Annotation Tool</span>
+          </div>
+          <a class="project-link" href="https://github.com/Sihang-Geng/Point-Cloud-Affordance-Annotator" target="_blank" rel="noreferrer">查看代码仓库</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="proofs">
+      <h2 class="section-title reveal">证明材料</h2>
+      <div class="proof-list reveal">
+        <a href="assets/docs/academic-ranking-transcript.pdf" target="_blank" rel="noreferrer">成绩排名及成绩单</a>
+        <a href="assets/docs/national-scholarship.pdf" target="_blank" rel="noreferrer">国家奖学金证明</a>
+        <a href="assets/docs/paper-framework-proof.pdf" target="_blank" rel="noreferrer">论文主框架图证明</a>
+        <a href="assets/docs/aic-national-award.pdf" target="_blank" rel="noreferrer">AI 算法国一证明</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <h2 class="section-title reveal">联系我</h2>
+      <p class="contact-copy reveal">欢迎通过邮箱或 GitHub 查看我的科研方向、项目代码和证明材料。</p>
+      <div class="contact-links reveal">
+        <a class="button primary" href="mailto:gengsihang2025@163.com">gengsihang2025@163.com</a>
+        <a class="button secondary" href="https://github.com/Sihang-Geng?tab=repositories" target="_blank" rel="noreferrer">GitHub 个人项目主页</a>
+        <a class="button secondary" href="assets/docs/resume-geng-sihang.pdf" target="_blank" rel="noreferrer">简历</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> 耿思航</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
