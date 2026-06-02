@@ -157,13 +157,28 @@ h1 {
   letter-spacing: 0;
 }
 
-.hero-copy {
-  max-width: 880px;
-  margin-bottom: 22px;
+.hero-profile-points {
+  display: grid;
+  gap: 10px;
+  max-width: 940px;
+  margin: 0 0 22px;
+}
+
+.hero-profile-points p {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 10px;
+  margin: 0;
   color: #435066;
-  font-size: clamp(21px, 2vw, 26px);
+  font-size: clamp(18px, 1.75vw, 23px);
   font-weight: 700;
-  line-height: 1.78;
+  line-height: 1.68;
+}
+
+.hero-profile-points strong {
+  color: var(--brand-dark);
+  font-weight: 900;
+  white-space: nowrap;
 }
 
 .hero-highlights {
@@ -206,34 +221,34 @@ h1 {
   display: grid;
   align-content: center;
   justify-items: start;
-  gap: 3px;
-  min-width: min(100%, 360px);
+  gap: 5px;
+  min-width: min(100%, 430px);
   min-height: 58px;
   margin-left: auto;
-  padding: 7px 16px;
+  padding: 8px 18px;
   color: var(--brand-dark);
   background: rgba(255, 255, 255, 0.76);
   border: 1px solid #d7e2ff;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 800;
-  line-height: 1.25;
+  line-height: 1.28;
   box-shadow: 0 12px 24px rgba(23, 32, 51, 0.08);
-  cursor: default;
-  user-select: none;
-  -webkit-user-select: none;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .hero-contact-card span {
-  display: flex;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
   align-items: baseline;
-  gap: 4px;
+  gap: 8px;
   white-space: nowrap;
 }
 
 .hero-contact-card strong {
   color: #52617a;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
 }
 
@@ -310,7 +325,7 @@ h1 {
   font-size: 14px;
 }
 
-.hero-copy,
+.hero-profile-points p,
 .about-content p,
 .research-card p,
 .aic-feature p,
@@ -770,8 +785,17 @@ h1 {
 
   .hero-contact-card {
     width: 100%;
-    flex-direction: column;
-    gap: 5px;
+    max-width: 480px;
+  }
+
+  .hero-profile-points p {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    text-align: left;
+  }
+
+  .hero-contact-card span {
+    grid-template-columns: 48px minmax(0, 1fr);
   }
 
   .aic-feature,
