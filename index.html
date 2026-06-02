@@ -13,7 +13,7 @@
     <nav class="nav" aria-label="主导航">
       <a href="#about">关于</a>
       <a href="#research">科研</a>
-      <a href="#projects">项目</a>
+      <a href="#projects">实践</a>
       <a href="#proofs">材料</a>
       <a href="#contact">联系</a>
     </nav>
@@ -37,12 +37,12 @@
             <span>AI 算法国一队长</span>
           </div>
           <div class="hero-actions">
-            <a class="button primary" href="#research">论文</a>
+            <a class="button primary" href="https://github.com/Sihang-Geng?tab=repositories" target="_blank" rel="noreferrer">GitHub 个人项目主页</a>
             <a class="button secondary" href="assets/docs/resume-geng-sihang.pdf" target="_blank" rel="noreferrer">查看简历</a>
-          </div>
-          <div class="hero-contact-links" aria-label="联系方式">
-            <a href="mailto:gengsihang2025@163.com">gengsihang2025@163.com</a>
-            <a href="https://github.com/Sihang-Geng?tab=repositories" target="_blank" rel="noreferrer">GitHub 个人项目主页</a>
+            <div class="hero-contact-card" aria-label="联系方式">
+              <span>gengsihang2025@163.com</span>
+              <span>15542034297（微信同号）</span>
+            </div>
           </div>
         </div>
         <figure class="hero-photo reveal">
@@ -52,33 +52,6 @@
     </section>
 
     <section class="section" id="about">
-      <h2 class="section-title reveal">核心亮点</h2>
-      <div class="stats-grid">
-        <article class="stat-card reveal">
-          <strong>4.10 / 5.00</strong>
-          <span>GPA</span>
-        </article>
-        <article class="stat-card reveal">
-          <strong>1 / 35</strong>
-          <span>专业排名</span>
-        </article>
-        <article class="stat-card reveal">
-          <strong>国家奖学金</strong>
-          <span>2024-2025 学年</span>
-        </article>
-        <article class="stat-card reveal">
-          <strong>国家一等奖</strong>
-          <span>AI 算法竞赛队长</span>
-        </article>
-        <article class="stat-card reveal">
-          <strong>一作论文</strong>
-          <span>水下视觉感知方向</span>
-        </article>
-        <article class="stat-card reveal">
-          <strong>中科院科研训练</strong>
-          <span>遥感小目标检测</span>
-        </article>
-      </div>
       <div class="about-content reveal">
         <p>
           我已有较系统的科研训练经历，也具备较扎实的课程基础。课程方面，高等数学上下均为 98，Python 程序设计 94，机器学习 92；科研训练方面，围绕水下视觉感知、遥感小目标检测和多模态推荐建模持续开展实验。熟悉 PyTorch 与 GPU 集群环境，掌握 Transformer、LoRA、VLM 架构与微调流程，具备视觉与 NLP 常用模型训练、实验复现、结果对比和代码管理经验。
@@ -124,43 +97,43 @@
     </section>
 
     <section class="section" id="projects">
-      <h2 class="section-title reveal">项目介绍</h2>
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <h3>CDP-Train</h3>
-          <p>训练框架开源，用于CDP/AHFI 结构训练、验证。</p>
-          <div class="tag-list">
-            <span>YOLO</span>
-            <span>COCO AP</span>
-            <span>Underwater Object Detection</span>
+      <h2 class="section-title reveal">竞赛与实践</h2>
+      <div class="project-showcase">
+        <article class="aic-feature reveal">
+          <div class="project-copy">
+            <p class="badge">AI 算法国一 · 初赛 1/446 · 队长</p>
+            <h3>AIC_Solution</h3>
+            <p>
+              面向图书借阅推荐赛题，融合 LLM API 语义扩展、BERT 表征、GAT 关系建模与集成排序策略，完成从特征构造到结果融合的完整方案，并在全国初赛 446 支队伍中排名第 1。
+            </p>
+            <div class="tag-list">
+              <span>LLM API</span>
+              <span>BERT</span>
+              <span>GAT</span>
+              <span>Ensemble Ranking</span>
+            </div>
+            <div class="button-row">
+              <a class="button primary small" href="https://github.com/Sihang-Geng/AIC_Solution" target="_blank" rel="noreferrer">查看代码仓库</a>
+              <a class="button secondary small" href="assets/docs/aic-national-award.pdf" target="_blank" rel="noreferrer">获奖证明</a>
+            </div>
           </div>
-          <a class="project-link" href="https://github.com/Sihang-Geng/CDP-train" target="_blank" rel="noreferrer">查看代码仓库</a>
+          <a class="project-preview" href="assets/images/aic-memories.jpg" target="_blank" rel="noreferrer" aria-label="查看 AIC 竞赛回忆截图">
+            <img src="assets/images/aic-memories.jpg" alt="AIC 竞赛回忆截图">
+          </a>
         </article>
 
-        <article class="project-card reveal">
-          <h3>AIC_Solution</h3>
-          <p>图书借阅推荐赛题，结合 LLM API、BERT、GAT 与集成排序，初赛排名 1/446，获国家一等奖。</p>
-          <div class="tag-list">
-            <span>LLM API</span>
-            <span>BERT</span>
-            <span>GAT</span>
-            <span>Multimodal Ranking</span>
+        <article class="compact-project reveal">
+          <img src="assets/images/point-cloud-affordance.jpg" alt="点云可供性标注效果截图">
+          <div>
+            <h3>Point-Cloud-Affordance-Annotator</h3>
+            <p>3D 点云可供性标注小工具，将少量区域点选扩散为交互热力图，用于快速生成可视化标注结果。</p>
+            <div class="tag-list">
+              <span>Open3D</span>
+              <span>kNN Diffusion</span>
+              <span>Annotation Tool</span>
+            </div>
+            <a class="project-link" href="https://github.com/Sihang-Geng/Point-Cloud-Affordance-Annotator" target="_blank" rel="noreferrer">查看代码仓库</a>
           </div>
-          <div class="button-row">
-            <a class="button primary small" href="https://github.com/Sihang-Geng/AIC_Solution" target="_blank" rel="noreferrer">查看代码仓库</a>
-            <a class="button secondary small" href="assets/docs/aic-national-award.pdf" target="_blank" rel="noreferrer">获奖证明</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <h3>Point-Cloud-Affordance-Annotator</h3>
-          <p>3D 点云可供性标注工具，将少量点选种子经 kNN 图扩散为 affordance heatmap。</p>
-          <div class="tag-list">
-            <span>Open3D</span>
-            <span>kNN Diffusion</span>
-            <span>Annotation Tool</span>
-          </div>
-          <a class="project-link" href="https://github.com/Sihang-Geng/Point-Cloud-Affordance-Annotator" target="_blank" rel="noreferrer">查看代码仓库</a>
         </article>
       </div>
     </section>
