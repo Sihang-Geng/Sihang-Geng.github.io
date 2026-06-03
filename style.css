@@ -619,7 +619,7 @@ h1 {
 
 .compact-project {
   display: grid;
-  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
   gap: 22px;
   align-items: center;
   padding: 20px;
@@ -631,10 +631,10 @@ h1 {
 .compact-project img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  aspect-ratio: 1 / 1.03;
+  object-fit: contain;
   object-position: center;
-  background: #ffffff;
+  background: #0f131b;
   border: 1px solid #dbe6f8;
   border-radius: 6px;
 }
@@ -758,8 +758,8 @@ h1 {
   }
 
   .compact-project img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+    aspect-ratio: 1 / 1.03;
+    object-fit: contain;
     object-position: center;
   }
 }
@@ -825,7 +825,7 @@ h1 {
   }
 
   .compact-project img {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 1 / 1.03;
   }
 }
 
